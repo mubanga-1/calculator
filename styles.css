@@ -5,18 +5,68 @@
 
 }
 
-body, .container {
+body, .container, .btn-container,
+.numbers, .operators{
     display: flex;
 }
 
 body {
+    font-family: sans-serif;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+    background-color: #121212;
+    padding: 45px 30px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+#expression {
+    align-self: center;
+    padding: 6px 5px;
+    width: 340px;
+    font-size: 27px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: right;
+    color: black;
+}
+
+.btn-container {
+    width: 100%;    
+    justify-content: space-between; 
+    margin-top: 15px;
+    gap: 30px;
+}
+
+.numbers {
+    gap: 20px;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-container button {
+    background-color: #fff;
+    padding: 13px 25px;
+    font-size: 22px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: .6s ease;
+}
+
+.operators {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-container button:hover {
+    background-color: #626262;
+    color: #f1f2f3;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, .75);   
 }

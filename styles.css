@@ -6,9 +6,13 @@
 }
 
 body, .container, .btn-container,
-.numbers, .operators{
+.numbers, .operators, .operations{
     display: flex;
 }
+
+.container, .operators, .operations {
+    flex-direction: column;
+} 
 
 body {
     font-family: sans-serif;
@@ -23,7 +27,6 @@ body {
     width: 400px;
     border: 1px solid black;
     border-radius: 30px;
-    flex-direction: column;
 }
 
 #expression {
@@ -60,8 +63,7 @@ body {
     transition: .6s ease;
 }
 
-.operators {
-    flex-direction: column;
+.operators, .operations {
     gap: 15px;
 }
 

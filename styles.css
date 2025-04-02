@@ -41,10 +41,11 @@ body {
     width: 100%;    
     justify-content: space-between; 
     margin-top: 15px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .numbers {
+    flex-grow: 1;
     gap: 20px;  
     flex-wrap: wrap;
     justify-content: center;
@@ -52,7 +53,7 @@ body {
 
 .btn-container button {
     background-color: #fff;
-    padding: 13px 25px;
+    padding: 5px 20px;
     font-size: 22px;
     border: 1px solid transparent;
     border-radius: 12px;
